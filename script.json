@@ -1,0 +1,16 @@
+
+// 页面加载完成后执行
+document.addEventListener("DOMContentLoaded", function () {
+
+    // 获取页面中的导航链接
+    const navLinks = document.querySelectorAll(".nav-links a");
+
+    // 点击导航时，平滑跳转到对应区域
+    navLinks.forEach(function (link) {
+        link.addEventListener("click", function () {
+            console.log("正在访问：" + link.textContent);
+        });
+    });
+
+    console.log("My Space 网站加载成功！");
+});
